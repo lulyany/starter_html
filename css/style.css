@@ -1,0 +1,131 @@
+body{
+    line-height: 150%;
+    margin: 10px;
+    background-color:bisque
+}
+ 
+ 
+header, nav{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 9px 8px 7px;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    font-size: 200%;
+    padding: 0px 10px 0px 10px;
+    background-color: burlywood;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+nav a.current{
+    text-decoration: underline wavy;
+    text-transform: uppercase;
+    text-underline-offset: 10%;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    margin: 2% 0% 2% 0%;
+}
+
+h2, h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin: 2% 0% 2% 0%; 
+}
+
+.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus{
+    top: 20px;
+}
+
+*:focus{
+    outline: 2px solid grey;
+}
+
+img, video{
+    border: burlywood 5px solid;
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+p{
+    padding: 5px;
+    font-style: italic;
+    background-color: burlywood;
+}
+
+p:first-of-type{
+    border-radius: 0 25px 0 0;
+}
+
+ul {
+    display: inline-block;
+    margin-left: 50px;
+}
+li {
+    color: black;
+}
+
+#index-main div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+
+div h2 {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+
+div img:first-of-type{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+div p{
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+}
+
+div p:first-of-type{
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+}
+
+div h3:first-of-type{
+    grid-column: 1 / -1;
+    grid-row: 4 / span 1;
+    text-align: center;
+}
+
+div h3:last-of-type{
+    grid-column: 1 / -1;
+    grid-row: 6 / span 1;
+    text-align: center;
+}
