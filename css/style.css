@@ -81,7 +81,8 @@ h1{
     /* font-weight: bold; */
     font-size: 500%;
     color: #cf556c;
-    margin: 20% 0% 30% 0%;
+    /* margin: 30% 0% 30% 0%; */
+    margin: 30vh 0 40vh 0;
     padding: 10px 0 10px 60px;
     text-align: center;
     font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -355,8 +356,10 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     /* color: white; */
-    height: 600px;
+    /* height: 800px; */
+    height: 100vh;
     background-image: url("../images/travel-cover-vermont.jpg");
+    background-position: center;
     text-align: center;
 }
 
@@ -365,7 +368,8 @@ li {
     color: whitesmoke;
     font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 300px 0 ;
+    /* padding: 300px 0; */
+    padding: 50vh 0;
     text-align: center;
     /* padding: 10px 0 10px 60px; */
     
