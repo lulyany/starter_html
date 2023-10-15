@@ -83,15 +83,16 @@ h1{
     color: #cf556c;
     margin: 20% 0% 30% 0%;
     padding: 10px 0 10px 60px;
+    text-align: center;
     font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.font-satisfy{
+.font-different{
     /* font-size: 400%; */
     /* margin-left: 25px; */
     color: #b12a5b;
     font-weight: bold;
-    font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+    /* font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  */
 }
 
 main *{
@@ -104,7 +105,7 @@ main *:hover {
 
 #pets-gallery{
     display: grid;
-    grid-template-columns: repeat(1fr, 5);
+    grid-template-columns: repeat(5, 1fr);
     /* grid-template-rows: 1fr; */
     /* position: absolute; */
     /* top: 400px; */
@@ -231,6 +232,11 @@ li {
     justify-items: center;
 }
 
+.single-pet-div h2, h3{
+    /* font-weight: bold; */
+    font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .pet-intro-div{
     padding: 10px;
     font-style: italic;
@@ -242,7 +248,7 @@ li {
     overflow: scroll;
     box-shadow: 10px 10px 50px gray;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    color: white;
+    color: whitesmoke;
     z-index: 1;
 }
 
@@ -326,22 +332,192 @@ li {
 }
 
 
+
+
+
+
 /* travel.html */
 
+
+
+
+
+#travel-main figure:hover, #travel-main img:hover, #travel-main video:hover{
+    transform: translateY(0px);
+}
+
 .travel-cover{
-    /* background-attachment: fixed;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    /* color: white; */
     height: 600px;
-    background-image: url("../images/travel-cover-vermont.jpg"); */
+    background-image: url("../images/travel-cover-vermont.jpg");
     text-align: center;
 }
 
 .travel-h1{
     font-size: 500%;
-    margin: 20% 0% 30% 0%;
-    /* padding: 10px 0 10px 60px; */
+    color: whitesmoke;
     font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 300px 0 ;
+    text-align: center;
+    /* padding: 10px 0 10px 60px; */
+    
 } 
+
+.travel-h1 .font-different{
+    color: rgb(255, 255, 0);
+}
+
+.single-travel-div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* row-gap: 30px; */
+    /* justify-items: center; */
+}
+
+.single-travel-div img:nth-of-type(1){
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: 100%;
+    /* max-height: 450px; */
+    object-fit: cover;
+}
+
+.single-travel-div img:nth-of-type(2){
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 3;
+    width: 100%;
+    height: 100%;
+    /* max-height: 450px; */
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+.single-travel-div h2, h3{
+    font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.single-travel-div h2{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    z-index: 1;
+    color: whitesmoke;
+    font-size: 500%;
+    margin: 100px 0 0 25px;
+    /* position: relative; */
+}
+
+.single-travel-div h3:first-of-type{
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    z-index: 1;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 150%;
+    margin: 0 0 0 25px;
+    /* position: absolute; */
+    /* top: 10px; */
+}
+
+.single-travel-div h3:nth-of-type(2){
+    grid-column: 4 / -1;
+    grid-row: 7 / span 1;
+    z-index: 1;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 300%;
+    margin: 25px 0 0 0;
+    /* padding: 0; */
+    /* text-align: center; */
+}
+
+.single-travel-div p:first-of-type{
+    grid-column: 2 / -1;
+    grid-row: 3 / span 1;
+    z-index: 1;
+    color: whitesmoke;
+    /* margin: 50px 0 0 0; */
+    line-height: 1.2;
+    background-color: rgba(50, 50, 50, 0.5);
+    padding: 20px 20px 20px 20px;
+    /* max-height: 200px; */
+    /* height: 100%; */
+    max-height: 250px;
+    line-height: 1.5;
+    /* line-height: 100%; */
+    overflow: scroll;
+    border-radius: 0 0 0 35px;
+}
+
+.single-travel-div p:nth-of-type(2){
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+    z-index: 1;
+    color: whitesmoke;
+    /* margin: 50px 25px 0 0; */
+    /* height: 100%; */
+    line-height: 1.5;
+    background-color: rgba(50, 50, 50, 0.5);
+    padding: 20px 20px 20px 20px;
+    max-height: 250px;
+    overflow: scroll;
+    border-radius: 0 0 35px 0;
+}
+
+.single-travel-div figure:nth-of-type(1){
+    grid-column: 3 / span 3;
+    grid-row: 7 / span 2;   
+}
+
+.single-travel-div figure:nth-of-type(2){
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;   
+}
+
+.single-travel-div figure:nth-of-type(3){
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1;   
+}
+
+.single-travel-div figure:nth-of-type(4){
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1;   
+}
+
+.single-travel-div figure:nth-of-type(5){
+    grid-column: 2 / span 1;
+    grid-row: 8 / span 1;   
+}
+
+.single-travel-div figure{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: end;
+}
+
+.single-travel-div figure img, video{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-travel-div figure figcaption{
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    color: whitesmoke;
+    background-color: rgba(50, 50, 50, 0.5);
+    max-height: 100px;
+    line-height: 1.2;
+    padding: 10px;
+    /* height: 100%; */
+    overflow: scroll;
+    z-index: 1;
+}
 
