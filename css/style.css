@@ -82,8 +82,9 @@ h1{
     font-size: 500%;
     color: #cf556c;
     /* margin: 30% 0% 30% 0%; */
-    margin: 30vh 0 40vh 0;
-    padding: 10px 0 10px 60px;
+    /* margin: 30vh 0 40vh 0;/ */
+    padding: 40vh 0 40vh 0;
+    /* padding: 10px 0 10px 60px; */
     text-align: center;
     font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -199,7 +200,7 @@ h3{
 }
 
 .skip:focus{
-    top: 20px;
+    top: 100px;
 }
 
 *:focus{
@@ -347,7 +348,7 @@ li {
 
 
 
-#travel-main figure:hover, #travel-main img:hover, #travel-main video:hover{
+.single-travel-div:hover, .travel-cover:hover, .single-travel-div img:hover, #travel-main figure:hover, #travel-main img:hover, #travel-main video:hover{
     transform: translateY(0px);
 }
 
@@ -529,3 +530,54 @@ li {
     z-index: 1;
 }
 
+
+
+
+
+
+/* recipes.html */
+
+/* .recipes-cover{
+    position: relative;
+    text-align: center;
+} */
+
+.recipes-cover{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    /* height: 800px; */
+    height: 100vh;
+    background-image: url("../images/recipes-cover.jpg");
+    background-position: center;
+    text-align: center;
+    z-index: -1;
+    /* opacity: 0.6; */
+}
+
+.recipes-h1{
+    font-size: 500%;
+    color: whitesmoke;
+    /* position: absolute; */
+    padding: 50vh 0;
+    /* top: 10vh; */
+    /* left: 50vw; */
+}
+
+.recipes-h1 .font-different{
+    color: rgb(255, 255, 0);
+}
+
+.single-recipes-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.single-recipes-div img:nth-of-type(1){
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
