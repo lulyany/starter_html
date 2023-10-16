@@ -447,7 +447,7 @@ li {
 }
 
 .single-travel-div p:first-of-type{
-    grid-column: 2 / -1;
+    grid-column: 3 / -1;
     grid-row: 3 / span 1;
     z-index: 1;
     color: whitesmoke;
@@ -457,7 +457,8 @@ li {
     padding: 20px 20px 20px 20px;
     /* max-height: 200px; */
     /* height: 100%; */
-    max-height: 250px;
+    /* max-height: 250px; */
+    max-height: 25vh;
     line-height: 1.5;
     /* line-height: 100%; */
     overflow: scroll;
@@ -531,7 +532,8 @@ li {
     grid-row: 2 / span 1;
     color: whitesmoke;
     background-color: rgba(50, 50, 50, 0.5);
-    max-height: 100px;
+    /* max-height: 100px; */
+    max-height: 75%;
     line-height: 1.2;
     padding: 10px;
     /* height: 100%; */
