@@ -97,11 +97,11 @@ h1{
     /* font-family: Satisfy, "Reem Kufi Fun", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  */
 }
 
-main *{
+h1, h2, h3, p, figcaption, li{
     transition: transform 0.3s;
 }
 
-main *:hover {
+h1:hover, h2:hover, h3:hover, p:hover, figcaption:hover, li:hover {
     transform: translateY(-10px);
 }
 
@@ -347,10 +347,11 @@ li {
 
 
 
-
+/* 
 .single-travel-div:hover, .travel-cover:hover, .single-travel-div img:hover, #travel-main figure:hover, #travel-main img:hover, #travel-main video:hover{
     transform: translateY(0px);
-}
+    transition: none;
+} */
 
 .travel-cover{
     background-attachment: fixed;
@@ -360,7 +361,7 @@ li {
     /* height: 800px; */
     height: 100vh;
     background-image: url("../images/travel-cover-vermont.jpg");
-    background-position: center;
+    background-position: bottom center;
     text-align: center;
 }
 
@@ -547,9 +548,10 @@ li {
     text-align: center;
 } */
 
-.single-recipes-div:hover, .recipes-cover:hover, .single-recipes-div img:hover, #recipes-main img:hover{
+/* .single-recipes-div:hover, .recipes-cover:hover, .single-recipes-div img:hover, #recipes-main img:hover{
     transform: translateY(0px);
-}
+    transition: none;
+} */
 
 
 .recipes-cover{
