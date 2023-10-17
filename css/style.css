@@ -333,26 +333,26 @@ li {
 }
 
 .single-pet-div img:nth-of-type(2){
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 2;
     grid-row: 7 / span 1;
     width: 90%;
 }
 
 .single-pet-div img:nth-of-type(3){
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 2;
     grid-row: 7 / span 1;
     width: 90%;
 }
 
 .single-pet-div img:nth-of-type(4){
-    grid-column: 3 / span 1;
-    grid-row: 7 / span 1;
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
     width: 90%;
 }
 
 .single-pet-div img:nth-of-type(5){
-    grid-column: 4 / span 1;
-    grid-row: 7 / span 1;
+    grid-column: 3 / span 2;
+    grid-row: 8 / span 1;
     width: 90%;
 }
 
@@ -364,19 +364,18 @@ li {
 
 .single-pet-div h3:last-of-type{
     grid-column: 1 / -1;
-    grid-row: 8 / span 1;
+    grid-row: 9 / span 1;
     margin-top: 75px;
     text-align: center;
 }
 
 .single-pet-div ul{
     grid-column: 1 / -1;
-    grid-row: 9 / span 1;
-    
+    grid-row: 10 / span 1;
 }
 
 .single-pet-div ul li{
-    display: inline;
+    /* display: inline; */
     margin: 10px;
     padding: 20px;
     /* list-style: url('../images/like-16.png'); */
@@ -910,6 +909,51 @@ li {
         border-radius: 50%;
         position: relative;
     }
+
+    .single-pet-div h3:last-of-type{
+        grid-column: 1 / -1;
+        grid-row: 9 / span 1;
+        margin-top: 75px;
+        text-align: center;
+    }
+    
+    .single-pet-div ul{
+        grid-column: 1 / -1;
+        grid-row: 10 / span 1;
+    }
+
+    .single-pet-div img:nth-of-type(2){
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+        width: 90%;
+    }
+    
+    .single-pet-div img:nth-of-type(3){
+        grid-column: 2 / span 1;
+        grid-row: 7 / span 1;
+        width: 90%;
+    }
+    
+    .single-pet-div img:nth-of-type(4){
+        grid-column: 3 / span 1;
+        grid-row: 7 / span 1;
+        width: 90%;
+    }
+    
+    .single-pet-div img:nth-of-type(5){
+        grid-column: 4 / span 1;
+        grid-row: 7 / span 1;
+        width: 90%;
+    }
+
+
+    .single-pet-div ul li{
+        display: inline;
+        margin: 10px;
+        padding: 20px;
+        /* list-style: url('../images/like-16.png'); */
+    }
+
 
     .single-travel-div figure:nth-of-type(1){
         grid-column: 3 / span 3;
