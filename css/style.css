@@ -29,7 +29,7 @@ nav {
     /* background-color: burlywood; */
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     margin: 0;
-    padding: 1%;
+    /* padding: 1vw; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -40,7 +40,7 @@ nav {
 nav ul{
     display: inline-block;
     /* width: 100%; */
-    padding: 2vw;
+    padding: 1vh 0 1vh 0;
     /* background-color: burlywood;  */
     border-radius: 10px;
     text-align: justify;
@@ -52,7 +52,7 @@ nav ul li{
     font-size: 100%;
     font-weight: bold;
     /* padding: 10px 80px 10px 80px; */
-    padding: 5vw 5vw 5vw 5vw;
+    padding: 0vw 5vw 0vw 5vw;
     /* background-color: burlywood; */
     transition: font-size 0.3s;
     /* margin: 150px; */
@@ -573,7 +573,7 @@ li {
     /* height: 30vh; */
 }
 
-.single-travel-div figure img, video{
+.single-travel-div figure img, .single-travel-div figure video{
     grid-column: 1 / -1;
     grid-row: 1 / span 2;
     width: 100%;
